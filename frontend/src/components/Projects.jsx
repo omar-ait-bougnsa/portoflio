@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
@@ -79,53 +78,38 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section id="projects" className="py-24 relative">
+        <section id="projects" className="py-24 border-t border-white/5">
             <div className="container mx-auto px-4 max-w-6xl">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="mb-16 flex flex-col items-center text-center"
-                >
-                    <h2 className="text-4xl font-bold font-outfit mb-4 text-white">Featured Projects</h2>
-                    <div className="w-20 h-1.5 bg-primary rounded-full"></div>
-                    <p className="mt-6 text-slate-400 max-w-2xl text-center">
-                        A selection of my most impactful projects from the rigorous 42 curriculum.
-                    </p>
-                </motion.div>
+                <div className="mb-12">
+                    <h2 className="text-3xl font-bold font-outfit mb-4 text-white">Featured Projects</h2>
+                    <div className="w-16 h-1 bg-emerald-500"></div>
+                </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    {projects.map((project, idx) => (
-                        <motion.div
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {projects.map((project) => (
+                        <div
                             key={project.title}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: idx * 0.1 }}
-                            className="group glass rounded-2xl p-8 relative overflow-hidden flex flex-col justify-between"
+                            className="bg-slate-900 border border-slate-800 p-6 flex flex-col h-full hover:border-emerald-500/50 transition-colors"
                         >
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-full -z-10 transition-transform group-hover:scale-125 duration-500"></div>
-
-                            <div>
-                                <div className="flex justify-between items-start mb-4">
-                                    <h3 className="text-2xl font-bold text-white font-outfit">{project.title}</h3>
-                                    <a href={project.github} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-primary transition-colors">
-                                        <Github size={24} />
-                                    </a>
-                                </div>
-                                <p className="text-slate-300 leading-relaxed mb-6 font-inter text-sm md:text-base">
-                                    {project.desc}
-                                </p>
+                            <div className="flex justify-between items-start mb-4">
+                                <h3 className="text-lg font-bold text-slate-100 font-outfit">{project.title}</h3>
+                                <a href={project.github} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-emerald-500 transition-colors z-10 shrink-0 ml-4">
+                                    <Github size={18} />
+                                </a>
                             </div>
+                            
+                            <p className="text-slate-400 mb-6 font-inter text-sm flex-grow">
+                                {project.desc}
+                            </p>
 
                             <div className="flex flex-wrap gap-2 mt-auto">
                                 {project.tech.map(t => (
-                                    <span key={t} className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                                    <span key={t} className="text-[10px] font-semibold text-slate-400 bg-slate-950 px-2 py-1 border border-slate-800">
                                         {t}
                                     </span>
                                 ))}
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>

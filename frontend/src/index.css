@@ -1,11 +1,11 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 @theme {
-  --color-primary: #10b981;
+  --color-primary: #10b981; /* Emerald Green for a professional accent */
   --color-primary-hover: #059669;
-  --color-bg-dark: #0f172a;
-  --color-bg-card: #1e293b;
+  --color-bg-dark: #0f172a; /* Slate 900 */
+  --color-bg-card: #1e293b; /* Slate 800 */
   --color-text-main: #f8fafc;
   --color-text-muted: #94a3b8;
   --font-inter: "Inter", sans-serif;
@@ -24,9 +24,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom utilities & animations */
+/* Custom utilities */
 @layer utilities {
-  .glass {
-    @apply bg-slate-900/40 backdrop-blur-md border border-slate-700/50 shadow-xl;
+  .basic-card {
+    @apply bg-slate-900 border border-slate-800 shadow-sm transition-colors duration-200;
+  }
+  .basic-card:hover {
+    @apply border-slate-600 bg-slate-800/80;
+  }
+  .text-primary {
+    @apply text-emerald-500;
+  }
+  .bg-primary {
+    @apply bg-emerald-500;
   }
 }
+
+
