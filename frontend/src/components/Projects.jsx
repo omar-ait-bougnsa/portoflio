@@ -4,6 +4,42 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
     {
+        title: "get_next_line",
+        tech: ["C", "File I/O", "Memory Management"],
+        desc: "Whether it's a file, stdin, or even later a network connection, you'll always need a way to read content line by line. It's time to start working on this function, which will be essential for your future projects.",
+        github: "https://github.com/omar-ait-bougnsa"
+    },
+    {
+        title: "Libft",
+        tech: ["C", "Data Structures", "Algorithms"],
+        desc: "This project is your very first project as a learner at 42. You will need to recode a few functions from the C standard library, as well as some other utility functions that you will use throughout your whole curriculum.",
+        github: "https://github.com/omar-ait-bougnsa"
+    },
+    {
+        title: "Philosophers",
+        tech: ["C", "Unix", "Concurrency", "Mutex", "Threads"],
+        desc: "A concurrent programming project simulating the dining philosophers problem. Designed and implemented complex thread and process management, utilizing mutexes to prevent data races and deadlocks.",
+        github: "https://github.com/omar-ait-bougnsa"
+    },
+    {
+        title: "NetPractice",
+        tech: ["Networking", "OSI Model", "TCP/IP"],
+        desc: "Tackled various networking challenges focused on configuring small-scale networks. Gained deep understanding of IP addressing, subnetting, routing, and the TCP/IP stack.",
+        github: "https://github.com/omar-ait-bougnsa"
+    },
+    {
+        title: "Born2beroot",
+        tech: ["Virtualization", "System Administration", "Linux"],
+        desc: "An introduction to virtualization and system administration. Set up a secure Debian/CentOS virtual machine, configuring LVM, strict password policies, SSH, UFW, and customized sudo groups.",
+        github: "https://github.com/omar-ait-bougnsa"
+    },
+    {
+        title: "push_swap",
+        tech: ["C", "Algorithms", "Optimization"],
+        desc: "An algorithmic project focused on sorting data on a stack using a highly limited set of operations. Achieved maximum algorithmic efficiency with the lowest possible number of actions.",
+        github: "https://github.com/omar-ait-bougnsa"
+    },
+    {
         title: "C++ Modules 00-09",
         tech: ["C++98", "OOP", "Polymorphism", "Templates", "STL"],
         desc: "A comprehensive series of projects diving deep into Object-Oriented Programming with C++. Covered fundamentals from classes and inheritance to advanced topics like templates, abstract classes, algorithms, and STL containers.",

@@ -8,7 +8,7 @@ const skillsData = [
     },
     {
         category: "Technologies & Tools",
-        skills: ["Docker", "Docker Compose", "Git", "Linux/Unix", "NGINX", "React", "Node.js (Express, Fastify)", "MySQL", "SQLite"]
+        skills: ["Docker", "Docker Compose", "Git", "Linux/Unix", "NGINX", "React", "Node.js (Express, Fastify)", "Django", "MySQL", "SQLite", "Postman"]
     },
     {
         category: "Core Concepts",

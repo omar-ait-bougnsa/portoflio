@@ -4,10 +4,10 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 
-function App() {
+function App()
+{
   return (
     <div className="min-h-screen bg-slate-950 text-slate-200 selection:bg-primary/30 selection:text-primary">
-      {/* Navigation Layer */}
       <nav className="fixed w-full z-50 glass border-b border-slate-800/50">
         <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
           <a href="#" className="text-xl font-bold font-outfit tracking-wider text-white flex items-center gap-2">

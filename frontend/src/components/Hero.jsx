@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileText, Github, Mail, ChevronDown } from 'lucide-react';
+import { FileText, Github, Mail, ChevronDown, Linkedin, Phone } from 'lucide-react';
 
 const Hero = () => {
     return (
@@ -39,7 +39,7 @@ const Hero = () => {
                             className="flex items-center gap-2 bg-primary hover:bg-emerald-500 text-slate-950 font-semibold px-6 py-3 rounded-full transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] transform hover:-translate-y-1"
                         >
                             <Mail size={18} />
-                            Contact Me
+                            omar2bougnsa@gmail.com
                         </a>
                         <a
                             href="https://github.com/omar-ait-bougnsa"
@@ -49,6 +49,22 @@ const Hero = () => {
                         >
                             <Github size={18} />
                             GitHub
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/ait-bougnsa-omar-255143269/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-medium px-6 py-3 rounded-full border border-slate-700 transition-all transform hover:-translate-y-1 hover:shadow-lg"
+                        >
+                            <Linkedin size={18} />
+                            LinkedIn
+                        </a>
+                        <a
+                            href="tel:+212708010325"
+                            className="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-medium px-6 py-3 rounded-full border border-slate-700 transition-all transform hover:-translate-y-1 hover:shadow-lg"
+                        >
+                            <Phone size={18} />
+                            +212 708 010 325
                         </a>
                     </div>
                 </motion.div>
