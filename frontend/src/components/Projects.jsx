@@ -80,9 +80,12 @@ const Projects = () => {
     return (
         <section id="projects" className="py-24 border-t border-white/5">
             <div className="container mx-auto px-4 max-w-6xl">
-                <div className="mb-12">
+                <div className="mb-8">
                     <h2 className="text-3xl font-bold font-outfit mb-4 text-white">Featured Projects</h2>
-                    <div className="w-16 h-1 bg-emerald-500"></div>
+                    <div className="w-16 h-1 bg-emerald-500 mb-6"></div>
+                    <p className="text-slate-300">
+                        Here is my <a href="https://github.com/omar-ait-bougnsa" target="_blank" rel="noreferrer" className="text-emerald-400 font-semibold hover:underline">GitHub</a> if you want to see some projects.
+                    </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -92,19 +95,16 @@ const Projects = () => {
                             className="bg-slate-900 border border-slate-800 p-6 flex flex-col h-full hover:border-emerald-500/50 transition-colors"
                         >
                             <div className="flex justify-between items-start mb-4">
-                                <h3 className="text-lg font-bold text-slate-100 font-outfit">{project.title}</h3>
-                                <a href={project.github} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-emerald-500 transition-colors z-10 shrink-0 ml-4">
-                                    <Github size={18} />
-                                </a>
+                                <h3 className="text-lg font-bold text-emerald-300 font-outfit">{project.title}</h3>
                             </div>
                             
-                            <p className="text-slate-400 mb-6 font-inter text-sm flex-grow">
+                            <p className="text-slate-300 mb-6 font-inter text-sm flex-grow">
                                 {project.desc}
                             </p>
 
                             <div className="flex flex-wrap gap-2 mt-auto">
                                 {project.tech.map(t => (
-                                    <span key={t} className="text-[10px] font-semibold text-slate-400 bg-slate-950 px-2 py-1 border border-slate-800">
+                                    <span key={t} className="text-[10px] font-semibold text-emerald-100 bg-emerald-900/40 px-2 py-1 border border-emerald-800/50 rounded">
                                         {t}
                                     </span>
                                 ))}

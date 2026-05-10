@@ -23,10 +23,10 @@ const About = () => {
                             Recently, I have also achieved certification for completing the 42 Common Core at 1337 Coding School, demonstrating my ongoing commitment to expanding my academic and professional qualifications. I am currently in the 42 advanced part, with a level of 11.46.
                         </p>
                         <p>
-                            Currently, I am expanding my professional experience through an ongoing 4-month internship at <strong className="text-white">OCP Group</strong>, working on an EVSE HMI and a backend connected via the OCPP protocol, applying my engineering skills in a real-world enterprise environment.
+                            Currently, I am expanding my professional experience through an ongoing 4-month internship at <strong className="text-emerald-400 font-bold">OCP Group</strong>, working on an EVSE HMI and a backend connected via the OCPP protocol, applying my engineering skills in a real-world enterprise environment.
                         </p>
                         <p>
-                            My primary intersections of interest lie in <strong className="text-white">Backend Development, Full-Stack Architecture, and Cybersecurity.</strong> I thrive when building complex systems from the ground up and optimizing low-level performance.
+                            My primary intersections of interest lie in <strong className="text-emerald-400">Backend Development, Full-Stack Architecture, and Cybersecurity.</strong> I thrive when building complex systems from the ground up and optimizing low-level performance.
                         </p>
                     </div>
 

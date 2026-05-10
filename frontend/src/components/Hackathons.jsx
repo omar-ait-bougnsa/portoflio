@@ -63,7 +63,7 @@ const Hackathons = () => {
                             
                             <div className="flex flex-wrap gap-2 mt-auto basis-full items-end">
                                 {event.tags.map(tag => (
-                                    <span key={tag} className="text-[10px] font-semibold text-slate-400 bg-slate-950 px-2 py-1 border border-slate-800">
+                                    <span key={tag} className="text-[10px] font-semibold text-emerald-200 bg-emerald-900/40 px-2 py-1 border border-emerald-800/50 rounded">
                                         {tag}
                                     </span>
                                 ))}
